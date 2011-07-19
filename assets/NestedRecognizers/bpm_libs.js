@@ -1,6 +1,0 @@
-/* ===========================================================================
-   BPM Combined Asset File
-   MANIFEST: NestedRecognizers ()
-   This file is generated automatically by the bpm (http://www.bpmjs.org)    
-   =========================================================================*/
-spade.require("sproutcore-touch");var NestedRecognizers=SC.Application.create();NestedRecognizers.PinchPanView=SC.ContainerView.extend({scale:1,translate:{x:0,y:0},pinchChange:function(a,b){this.scale=b,this._applyTransforms()},panChange:function(a,b){this.translate=b,this._applyTransforms()},_applyTransforms:function(){var a="translate3d("+this.translate.x+"px,"+this.translate.y+"px,0)";a+=" scale3d("+this.scale+","+this.scale+",1)",this.$().css("-webkit-transform",a)}}),NestedRecognizers.OuterView=NestedRecognizers.PinchPanView.extend({classNames:["containerId"],childViews:["nestedView"],nestedView:NestedRecognizers.PinchPanView.extend({classNames:["nestedId"]})}),NestedRecognizers.OuterView2=NestedRecognizers.PinchPanView.extend({classNames:["containerId"],childViews:["nestedView"],nestedView:NestedRecognizers.PinchPanView.extend({classNames:["nestedId"]})}),$(document).ready(function(){SC.run(function(){NestedRecognizers.OuterView.create().append(),NestedRecognizers.OuterView2.create().append()})})
