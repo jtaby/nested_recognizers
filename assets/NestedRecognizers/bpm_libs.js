@@ -1,0 +1,6 @@
+/* ===========================================================================
+   BPM Combined Asset File
+   MANIFEST: NestedRecognizers ()
+   This file is generated automatically by the bpm (http://www.bpmjs.org)    
+   =========================================================================*/
+spade.require("sproutcore-touch");var NestedRecognizers=SC.Application.create();NestedRecognizers.OuterView=SC.ContainerView.extend({elementId:"containerId",scale:1,pinchChange:function(a,b){this.scale=b,this._applyTransforms()},_applyTransforms:function(){var a=" scale3d("+this.scale+","+this.scale+",1)";this.$().css("-webkit-transform",a)},childViews:["nestedView"],nestedView:SC.View.extend({elementId:"nestedId",translate:{x:0,y:0},panChange:function(a,b){this.translate=b,this._applyTransforms()},_applyTransforms:function(){var a="translate3d("+this.translate.x+"px,"+this.translate.y+"px,0)";this.$().css("-webkit-transform",a)}})}),$(document).ready(function(){SC.run(function(){NestedRecognizers.OuterView.create().append()}),$("#containerId").css({background:"red",position:"absolute",top:10,left:420,width:600,height:600,"-webkit-tranform":"translate3d(0,0,0)"}),$("#nestedId").css({background:"blue",position:"absolute",top:100,left:100,width:200,height:200,"-webkit-tranform":"translate3d(0,0,0)"})})
