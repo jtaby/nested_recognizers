@@ -4,20 +4,21 @@
    This file is generated automatically by the bpm (http://www.bpmjs.org)    
    =========================================================================*/
 
-#containerId{
+.containerId{
   background: red;
   position: absolute; 
   top: 10px; 
   left: 420px; 
-  width: 600px; 
-  height: 600px;
+  width: 350px; 
+  height: 350px;
   -webkit-tranform: translate3d(0,0,0)
 }
-#nestedId{
+
+.nestedId{
    background: blue;
    position: absolute; 
-   top: 100px; 
-   left: 100px; 
+   top: 50px; 
+   left: 50px; 
    width: 200px; 
    height: 200px;
    -webkit-tranform: translate3d(0,0,0)
