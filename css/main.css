@@ -1,1 +1,18 @@
-/* TODO: Add your app CSS here */
+#containerId{
+  background: red;
+  position: absolute; 
+  top: 10px; 
+  left: 420px; 
+  width: 600px; 
+  height: 600px;
+  -webkit-tranform: translate3d(0,0,0)
+}
+#nestedId{
+   background: blue;
+   position: absolute; 
+   top: 100px; 
+   left: 100px; 
+   width: 200px; 
+   height: 200px;
+   -webkit-tranform: translate3d(0,0,0)
+}
